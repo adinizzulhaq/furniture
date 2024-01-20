@@ -18,13 +18,15 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navbar Start -->
     <nav>
       <div class="navbar-nav">
         <div class="navbar-logo">
-          <a href="/">Furniture</a>
+          <a href="#">Furniture</a>
         </div>
         <div class="navbar-ekstra">
           <ul>
@@ -49,7 +51,7 @@
         <div class="home-left">
           <h3>Find Your</h3>
           <h2>Minimalist Furniture</h2>
-          <button>Buy Now</button>
+          <a href="#">Buy Now</a>
         </div>
         <div class="home-right">
           <img src="assets/img/home-picture.jpg" alt="" />
@@ -92,9 +94,14 @@
       <h1 class="section-title">About</h1>
       <div class="about-grid">
         <div class="image">
-          <img src="assets/img/about-picture.jpg" alt="" />
+          <img
+            src="assets/img/about-picture.jpg"
+            alt=""
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          />
         </div>
-        <div class="paragraf">
+        <div class="paragraf" data-aos="fade-left" data-aos-duration="1500">
           <h1>Minimalist Furniture</h1>
           <p>
             Minimalist furniture creates harmony between function and
@@ -112,7 +119,7 @@
     <section id="gallery">
       <h1 class="section-title">Gallery</h1>
       <div class="gallery-grid">
-        <div class="grid-1">
+        <div class="grid-1" data-aos="zoom-in" data-aos-duration="1500">
           <img src="assets/img/chair.jpg" alt="" />
           <div class="product-detail">
             <h3>Chair</h3>
@@ -124,7 +131,7 @@
             pleasant atmosphere in your room.
           </p>
         </div>
-        <div class="grid-2">
+        <div class="grid-2" data-aos="zoom-in" data-aos-duration="1500">
           <img src="assets/img/cupboard.jpg" alt="" />
           <div class="product-detail">
             <h3>Cupboard</h3>
@@ -136,7 +143,7 @@
             efficient storage while adding a modern aesthetic to your space.
           </p>
         </div>
-        <div class="grid-3">
+        <div class="grid-3" data-aos="zoom-in" data-aos-duration="1500">
           <img src="assets/img/bed.jpg" alt="" />
           <div class="product-detail">
             <h3>Bed</h3>
@@ -162,10 +169,28 @@
           </div>
           <div class="social-media">
             <ul>
-              <li><i class="ri-instagram-line ri-2x"></i></li>
-              <li><i class="ri-whatsapp-line ri-2x"></i></li>
-              <li><i class="ri-facebook-circle-fill ri-2x"></i></li>
-              <li><i class="ri-github-fill ri-2x"></i></li>
+              <li>
+                <a href="https://instagram.com/adin_izlhq" target="_blank"
+                  ><i class="ri-instagram-line ri-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://wa.me/+6281322919043" target="_blank"
+                  ><i class="ri-whatsapp-line ri-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/adin.izulhaq.77"
+                  target="_blank"
+                  ><i class="ri-facebook-circle-fill ri-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/adinizzulhaq" target="_blank"
+                  ><i class="ri-github-fill ri-2x"></i
+                ></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -269,5 +294,10 @@
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
+    <!-- Animate On Scroll Javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
