@@ -14,6 +14,25 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Jump section on click
+document.querySelectorAll(".page-scroll").forEach(function (element) {
+  element.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    var tujuan = this.getAttribute("href");
+    var elemenTujuan = document.querySelector(tujuan);
+
+    if (elemenTujuan) {
+      var offsetTop = elemenTujuan.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: offsetTop - 60,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
 // Active links on scroll
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("nav ul li a");

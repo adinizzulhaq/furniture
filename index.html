@@ -26,7 +26,7 @@
     <nav>
       <div class="navbar-nav">
         <div class="navbar-logo">
-          <a href="#">Furniture</a>
+          <a href="#home" class="page-scroll">Furniture</a>
         </div>
         <div class="navbar-ekstra">
           <ul>
@@ -60,27 +60,27 @@
       <div class="home-category">
         <h1 class="section-title">Category</h1>
         <div class="home-grid-category">
-          <div class="grid-1">
+          <div class="grid-1" data-aos="zoom-in" data-aos-duration="1500">
             <i class="ri-sofa-line ri-3x"></i>
             <p>Chair</p>
           </div>
-          <div class="grid-1">
+          <div class="grid-2" data-aos="zoom-in" data-aos-duration="1500">
             <i class="ri-archive-drawer-line ri-3x"></i>
             <p>Cupboard</p>
           </div>
-          <div class="grid-1">
+          <div class="grid-3" data-aos="zoom-in" data-aos-duration="1500">
             <i class="ri-door-closed-line ri-3x"></i>
             <p>Door</p>
           </div>
-          <div class="grid-1">
+          <div class="grid-4" data-aos="zoom-in" data-aos-duration="1500">
             <i class="ri-tv-line ri-3x"></i>
             <p>Television</p>
           </div>
-          <div class="grid-1">
+          <div class="grid-5" data-aos="zoom-in" data-aos-duration="1500">
             <i class="ri-restaurant-line ri-3x"></i>
             <p>Kitchen Set</p>
           </div>
-          <div class="grid-1">
+          <div class="grid-6" data-aos="zoom-in" data-aos-duration="1500">
             <i class="ri-hotel-bed-line ri-3x"></i>
             <p>Bed</p>
           </div>
@@ -94,9 +94,14 @@
       <h1 class="section-title">About</h1>
       <div class="about-grid">
         <div class="image">
-          <img src="assets/img/about-picture.jpg" alt="" />
+          <img
+            src="assets/img/about-picture.jpg"
+            alt=""
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          />
         </div>
-        <div class="paragraf">
+        <div class="paragraf" data-aos="fade-left" data-aos-duration="1500">
           <h1>Minimalist Furniture</h1>
           <p>
             Minimalist furniture creates harmony between function and
@@ -114,7 +119,7 @@
     <section id="gallery">
       <h1 class="section-title">Gallery</h1>
       <div class="gallery-grid">
-        <div class="grid-1">
+        <div class="grid-1" data-aos="zoom-in" data-aos-duration="1500">
           <img src="assets/img/chair.jpg" alt="" />
           <div class="product-detail">
             <h3>Chair</h3>
@@ -126,7 +131,7 @@
             pleasant atmosphere in your room.
           </p>
         </div>
-        <div class="grid-2">
+        <div class="grid-2" data-aos="zoom-in" data-aos-duration="1500">
           <img src="assets/img/cupboard.jpg" alt="" />
           <div class="product-detail">
             <h3>Cupboard</h3>
@@ -138,7 +143,7 @@
             efficient storage while adding a modern aesthetic to your space.
           </p>
         </div>
-        <div class="grid-3">
+        <div class="grid-3" data-aos="zoom-in" data-aos-duration="1500">
           <img src="assets/img/bed.jpg" alt="" />
           <div class="product-detail">
             <h3>Bed</h3>
@@ -158,7 +163,11 @@
     <section id="contact">
       <h1 class="section-title">Contact</h1>
       <div class="contact-grid">
-        <div class="contact-left">
+        <div
+          class="contact-left"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div class="contact-images">
             <img src="assets/img/contact-picture.jpg" alt="" />
           </div>
@@ -189,7 +198,11 @@
             </ul>
           </div>
         </div>
-        <div class="contact-right">
+        <div
+          class="contact-right"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <form>
             <input type="text" placeholder="Complete Name" />
             <input
@@ -292,7 +305,15 @@
     <!-- Animate On Scroll Javascript -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      gsap.from(".home-left", { duration: 1.5, x: -100, opacity: 0 });
+      gsap.from(".home-right", { duration: 1.5, x: 100, opacity: 0 });
     </script>
   </body>
 </html>
