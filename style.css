@@ -233,6 +233,10 @@ section {
   margin: 1rem 0;
 }
 
+.gallery-grid h4 {
+  color: var(--secondaryColor);
+}
+
 .gallery-grid p {
   line-height: 1.5rem;
 }
